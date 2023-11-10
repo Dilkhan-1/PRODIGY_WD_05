@@ -15,14 +15,10 @@ body {
 .main-container {
     width: 90%;
     max-width: 470px;
-    /* background: linear-gradient(135deg, #00feba, #5b548a); */
-    /* background: linear-gradient(135deg, #006994, #F4D35E); */
-    /* background: linear-gradient(135deg, #67b26f, #4ca2cd); */
-    /* background: linear-gradient(135deg, #ff6e7f, #bfe9ff); */
-    /* background: linear-gradient(135deg, #4a9961, #265d32); */
-    background: linear-gradient(135deg, #8799c0, #70a9a1);
+    /* background: linear-gradient(135deg, #8799c0, #70a9a1); */
+    background: linear-gradient(135deg, #1B998B, #4CB8C4);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 10px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -33,6 +29,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    color: #ebfffc;
+    font-size: 32px;
 }
 
 .search-box input {
@@ -49,6 +57,7 @@ body {
 }
 
 .search-box button {
+    display: flex;
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -56,6 +65,8 @@ body {
     height: 60px;
     width: 60px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-box img {
