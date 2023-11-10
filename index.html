@@ -11,11 +11,13 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-    <!-- Header section -->
-    <header class="header">
-        <h2>Weather App</h2>
-    </header>
-    
+    <!-- Nav Bar -->
+    <nav>
+        <ul>
+          <li>Weather App</li>
+        </ul>
+    </nav>
+
     <!-- Search bar and button -->
     <div class="main-container">
         <div class="search-box">
@@ -24,9 +26,13 @@
                 <img src="./assets/search.png" alt="search icon">
             </button>
         </div>
+
+        <!-- Message -->
         <div class="invalid">
-            <p>City not found!</p>
+            <p>*City not found!</p>
         </div>
+
+        <!-- Weather Data  -->
         <div class="weather">
             <img src="./assets/rain.png" alt="" class="weather-icon" >
             <h1 class="temp">27°C</h1>

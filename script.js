@@ -10,7 +10,7 @@ async function checkWeather(city) {
 
     if(searchBox.value == ""){
         document.querySelector(".invalid").style.display = "block";
-        document.querySelector(".invalid").textContent = "Please enter a city name!";
+        document.querySelector(".invalid").textContent = "*Please enter a city name!";
         document.querySelector(".weather").style.display = "none";
     } else {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -18,7 +18,7 @@ async function checkWeather(city) {
         
         if (response.status == 404 || data.name == "undefined") {
             document.querySelector(".invalid").style.display = "block";
-            document.querySelector(".invalid").textContent = "City not found!";
+            document.querySelector(".invalid").textContent = "*City not found!";
             document.querySelector(".weather").style.display = "none";
         }
         else {
@@ -43,8 +43,12 @@ async function checkWeather(city) {
                 weatherIcon.src = "./assets/mist.png";
             }
 
-            document.querySelector(".weather").style.display = "block";
+            // document.querySelector(".weather").style.display = "block";
             document.querySelector(".invalid").style.display = "none";
+
+            const weatherElement = document.querySelector(".weather");
+            weatherElement.style.display = "block";
+            weatherElement.classList.add("show");
         }
     }
     
